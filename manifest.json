@@ -1,0 +1,27 @@
+{
+  "name": "Focus Flow - Pomodoro Timer",
+  "short_name": "Focus Flow",
+  "description": "Simple, beautiful Pomodoro timer with bilingual support (EN/ZH)",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#1a1a2e",
+  "theme_color": "#e74c3c",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect rx='40' width='192' height='192' fill='%231a1a2e'/><text x='96' y='140' font-size='140' text-anchor='middle'>🍅</text></svg>",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect rx='100' width='512' height='512' fill='%231a1a2e'/><text x='256' y='380' font-size='380' text-anchor='middle'>🍅</text></svg>",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["productivity", "utilities"],
+  "lang": "zh-CN",
+  "dir": "ltr"
+}

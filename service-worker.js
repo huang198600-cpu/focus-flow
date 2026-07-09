@@ -1,4 +1,4 @@
-const CACHE_NAME = 'focus-flow-v7';
+const CACHE_NAME = 'focus-flow-v8';
 const ASSETS = [
   './index.html',
   './manifest.json'

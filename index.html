@@ -1600,9 +1600,23 @@ renderTasks();
 updateDisplay();
 </script>
 <div style="width:100%;text-align:center;padding:10px 0 20px;">
-  <a href="https://www.buymeacoffee.com/laodoushouji" target="_blank" rel="noopener" style="display:inline-block;">
-    <img src="https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=&slug=laodoushouji&button_colour=FF5F5F&font_colour=ffffff&outline_colour=000000&font_family=Cookie&font_weight=400&font_size=15&coffee_colour=FFDD00" alt="Buy me a coffee" style="height:45px;width:auto;border-radius:8px;">
-  </a>
+  <div style="display:flex;justify-content:center;align-items:center;gap:12px;flex-wrap:wrap">
+    <a href="https://www.buymeacoffee.com/laodoushouji" target="_blank" rel="noopener" style="display:inline-block;">
+      <img src="https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=&slug=laodoushouji&button_colour=FF5F5F&font_colour=ffffff&outline_colour=000000&font_family=Cookie&font_weight=400&font_size=15&coffee_colour=FFDD00" alt="Buy me a coffee" style="height:45px;width:auto;border-radius:8px;">
+    </a>
+    <button onclick="document.getElementById('wcModal').style.display='flex'" style="background:#07C160;color:#fff;border:none;padding:10px 20px;border-radius:8px;font-size:15px;cursor:pointer;font-family:sans-serif;display:inline-flex;align-items:center;gap:6px">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 01.213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 00.167-.054l1.903-1.114a.864.864 0 01.717-.098 10.16 10.16 0 002.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 01-1.162 1.178A1.17 1.17 0 014.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 01-1.162 1.178 1.17 1.17 0 01-1.162-1.178c0-.651.52-1.18 1.162-1.18zm3.96 3.443c-2.86-.12-5.474 1.068-6.944 2.936-1.47 1.868-1.72 4.316-.247 6.302 1.473 1.986 4.322 3.037 7.024 2.917a8.935 8.935 0 002.014-.394.717.717 0 01.585.08l1.55.907a.266.266 0 00.136.044.24.24 0 00.237-.241c0-.058-.023-.116-.039-.174l-.318-1.21a.482.482 0 01.174-.543C21.885 18.286 22.86 16.524 22.86 14.58c0-3.08-2.907-5.072-7.302-5.146zM13.5 12.986c.525 0 .95.433.95.968a.959.959 0 01-.95.968.959.959 0 01-.95-.968c0-.535.425-.968.95-.968zm4.75 0c.525 0 .95.433.95.968a.959.959 0 01-.95.968.959.959 0 01-.95-.968c0-.535.425-.968.95-.968z"/></svg>
+      微信赞赏
+    </button>
+  </div>
+</div>
+<div id="wcModal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);z-index:9999;justify-content:center;align-items:center" onclick="if(event.target===this)this.style.display='none'">
+  <div style="background:#fff;border-radius:12px;padding:20px;max-width:300px;text-align:center">
+    <div style="font-size:16px;font-weight:bold;margin-bottom:12px;color:#333">微信扫码赞赏 💚</div>
+    <div style="font-size:12px;color:#888;margin-bottom:12px">支持工具开发，感谢！</div>
+    <img src="https://sunsetpredict.cloud/wechat-pay.jpg" style="width:240px;max-width:100%;height:auto;border-radius:8px" alt="微信收款码">
+    <div style="margin-top:12px;font-size:12px;color:#999">点击外部关闭</div>
+  </div>
 </div>
 </body>
 </html>
